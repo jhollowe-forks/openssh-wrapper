@@ -96,7 +96,7 @@ class SSHConnection(object):
                    command.
         """
         self.server = b(server)
-        self.port = port
+        self.port = str(port)
         self.timeout = timeout
         self.check_server(server)
         self.user = getpass.getuser()
